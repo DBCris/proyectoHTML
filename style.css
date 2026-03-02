@@ -1,0 +1,56 @@
+html {
+    /* El color de fondo */
+    background-color:aquamarine; 
+
+    /* La imagen de fondo */
+    background-image: url('coral.webp');
+
+    /* Centrar la imagen */
+    background-position: center center;
+
+    /* Evitar que la imagen se repita */
+    background-repeat: no-repeat;
+
+    /* Ajustar el tamaño: 'cover' (cubre todo) o 'contain' (se ajusta) */
+    background-size: contain;
+
+    /* Altura necesaria para que se vea el fondo */
+    height: 70%;
+    width: 70%;
+}
+
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: inline-block;
+    justify-content: center;
+
+    background-color: black;
+    color: white;
+    padding: 0 10px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+
+#izquierda{
+    float: left;
+    list-style: none;
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+
+li{
+    float:right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+}
+
