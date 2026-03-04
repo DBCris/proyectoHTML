@@ -1,17 +1,18 @@
-html, body {
+html {
     margin: 0;
+    margin-bottom: 50px;
     height: 100%;
 }
 
 body {
-    background-color: #93c2c4 ;
-    
+    background-color: #93c2c4;
     background-image: url('coral.webp');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 40%;
     background-attachment: fixed;
-    
+
+    padding-top: 60px; /*Espacio necesario para que body no este detrás de nav*/
 }
 
 nav {
@@ -19,9 +20,10 @@ nav {
     top: 0;
     left: 0;
     right: 0;
+    
 
-    display: inline-block;
-    justify-content: center;
+    display: inline-block; /*Colocamos las opciones del nav en la mísma posición sin que cambien de linea*/
+    justify-content: center; /*Centramos el contenido del nav*/
     
 
     background-color: rgba(60, 60, 60);
@@ -33,7 +35,8 @@ nav {
 }
 
 #izquierda{
-    float: left;
+    float: left; /*La única parte del nav que debe ir a la izquierda*/
+
     text-shadow: 2px 2px 4px #000000;
     text-decoration: underline;
     
@@ -42,8 +45,7 @@ nav {
 li{
     float:right;
     
-    
-    list-style: none;
+    list-style: none; /*No le ponemos marquita a las listas del nav*/
     padding-right: 20px;
 }
 
