@@ -1,6 +1,7 @@
-html {
+/* 1. Fondo */
+html, body {
     margin: 0;
-    margin-bottom: 50px;
+    padding: 0;
     height: 100%;
 }
 
@@ -9,43 +10,72 @@ body {
     background-image: url('coral.webp');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: cover; /* Cambiado a cover para que no queden huecos */
     background-attachment: fixed;
-
-    padding-top: 60px; /*Espacio necesario para que body no este detrás de nav*/
+    padding-top: 80px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-nav {
+/* 2. nav (header) */
+header {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    background-color: rgba(60, 60, 60, 1);
     
+}
 
-    display: inline-block; /*Colocamos las opciones del nav en la mísma posición sin que cambien de linea*/
-    justify-content: center; /*Centramos el contenido del nav*/
-    
+#menu {
+    max-width: 1000px; /* Alineado con las cajas de abajo */
+    margin: 0 auto;
+    padding: 10px 20px;
+}
 
-    background-color: rgba(60, 60, 60);
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: right;
+    padding: 10px;
     color: white;
-    padding: 0 10px 10px;
+}
 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+nav ul li#izquierda {
+    float: left;
+    text-shadow: 2px 2px 4px #000000;
+    text-decoration: underline;
     font-size: larger;
 }
 
-#izquierda{
-    float: left; /*La única parte del nav que debe ir a la izquierda*/
-
-    text-shadow: 2px 2px 4px #000000;
-    text-decoration: underline;
-    
+/* 3. Cajas blancas */
+.estudios, .caja, footer {
+    max-width: 800px;
+    margin: 20px auto; /* Cajas centradas */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 12px;
+    clear: both;
 }
 
-li{
-    float:right;
-    
-    list-style: none; /*No le ponemos marquita a las listas del nav*/
-    padding-right: 20px;
+/* 4. Listas de las cajas*/
+.caja ul, .caja ol {
+    margin-top: 10px;
+    padding-left: 30px;
 }
 
+.caja li {
+    float: none;
+    list-style: disc; /* Recupera los puntos negros */
+    padding-right: 0;
+    margin-bottom: 8px;
+    color: black;
+}
+
+footer {
+    text-align: center;
+}
